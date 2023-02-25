@@ -2,73 +2,99 @@
 <html>
     <head>
         <title>Jenny Rafferty</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+               <div class="topnav">
+                <a href="#contact">Contact Me</a>
+                <a href="#projects">My Projects</a>
+            </div>
     </head>
     <body>
         <main>
         <header>
+            <br> 
         <h1>Jenny Rafferty</h1>
-        <h2>I am a Junior Software Developer</h2>
-        <figure>
-            <img src="file:///Users/jennyrafferty/Desktop/Projects/portfolio/images/Profile1.jpeg" alt="Photograph of me">
-            <br />
-            <figcaption>
-                Hi! Thanks for visiting my page
-            </figcaption>
-        </figure>
-        <a href="file:///Users/jennyrafferty/Desktop/Projects/portfolio/pages/contact.html" target="_blank">Contact Me</a>
-        <a href="file:///Users/jennyrafferty/Desktop/Projects/portfolio/pages/projects.html" target="_blank">Projects</a>
-    </header>
-<br /> 
-<hr />
+        </header>
         <section>
-            <h3>About Me</h3>
-                <p>I'm Irish and currently live in Salford, where I have been based since moving to Manchester for university in 2009.
-                    I have two guinea pigs called Ted and Dougal who spend most of their day napping and acting like they haven't just been fed.
+         <div class="row">
+            <div class="column">
+        <figure>
+            <img class="my-pic" src="file:///Users/jennyrafferty/Desktop/Projects/portfolio/images/Profile2.jpeg" alt="Photograph of me">
+            <br />
+        </figure>
+        </div>
+        <div>
+            <h2>About Me</h2>
+                <p class="bio">
+                I'm Irish and currently live in Salford, where I have been based since moving to Manchester for university in 2009. 
+                I'm currently learning to code via the Command Shift Bootcamp, my goal is to change my career and become a Software Developer.
+                <br>
+                <br>
+                I have two guinea pigs called Ted and Dougal who spend most of their day napping and acting like they haven't just been fed. 
+                </p>
+            </div>
+                <div class="column">
                     <figure>
-                        <img src="file:///Users/jennyrafferty/Desktop/Projects/portfolio/images/Ted.jpeg" alt="Photograph of my guinea pig Ted eating from a bowl">
+                        <img class="gps" src="file:///Users/jennyrafferty/Desktop/Projects/portfolio/images/Ted.jpeg" alt="Photograph of my guinea pig Ted eating from a bowl">
                         <br />
-                        <figcaption>
+                        <figcaption class="gp-cap">
                             Ted having a munch
                         </figcaption>
                     </figure>
+                    </div>
+                        <div class="row">
                     <figure>
-                        <img src="file:///Users/jennyrafferty/Desktop/Projects/portfolio/images/Dougal.jpeg" alt="Photograph of my guinea pig Dougal looking out from his house">
+                        <img class="gps" src="file:///Users/jennyrafferty/Desktop/Projects/portfolio/images/Dougal.jpeg" alt="Photograph of my guinea pig Dougal looking out from his house">
                         <br />
-                        <figcaption>
+                        <figcaption class="gp-cap">
                             Dougal supervising my activities
                         </figcaption>
                     </figure>
-                </p>
-                <p>I'm currently learning to code via the Command Shift Bootcamp. My goal is to change my career and become a Software Developer!
-                    When I'm not learning to code I'm trying not to fall over on my rollerskates around Manchester.
-                    <figure>
-                        <img src="file:///Users/jennyrafferty/Desktop/Projects/portfolio/images/Rollerskate.jpeg" alt="Photograph of me in my rollerskates">
-                        <br />
-                        <figcaption>
-                            Ready to roll!
-                        </figcaption>
-                    </figure>
-                </p>
+                    </div>
+                </div>
         </section>
+        <hr class="rounded">
         <section>
-            <header>
-                <h3>Qualities</h3>
-                <ol>
-                    <li>Reliable</li>
-                    <li>Patient</li>
-                    <li>Adaptable</li>
-                </ol>
-            </header>
+        <h3>Hobbies & Interests</h3>
+        <p>
+        When I'm not learning to code, I enjoy reading (mostly historical non-fiction as I studied this at university). I love to travel, particularly anywhere spooky or to see animals. 
+        I've recently taken up running again and hope to finally complete the couch to 5k app (for the fourth time) this year. 
+        When the weather is nice you can find me trying not to fall over on my rollerskates around Manchester.
+        </p>
+        <table width="99%">
+            <tr>
+             <td>
+                <img class="hobby-pic" src="file:///Users/jennyrafferty/Desktop/Projects/portfolio/images/Whitby.jpeg" alt="Photograph of Whitby Abbey">
+                <figcaption class="hobby-cap">
+                     Whitby Abbey - one of my favourite places in the UK
+                </figcaption></p></td>
+             <td><img class="hobby-pic" src="file:///Users/jennyrafferty/Desktop/Projects/portfolio/images/Cows.jpeg" alt="Photograph of me with highland cows">
+                <figcaption class="hobby-cap">
+                Living my best life with the highland cows at Lyme Park
+                </figcaption></td>
+            </tr>
+           </table>
+          </div>
+          <hr class="rounded">
+          <section id="projects">
+            <h3>My Projects</h3>
+          <p>
+            I'm currently learning HTML, CSS and JavaScript. You can check out some of my projects below.
+          </p>
+          <section>
+            <hr class="rounded">
+            <section id="contact-me">
+                <h3 class="contact">Get in touch</h3>
+                <label> Name:<input type="text" name="name"></label>
+                <label>Email:<input type="email" name="email"></label>
+                    <br /> 
+                <label>Contact reason:
+                <input type="checkbox" name="contact-reason" value="Business">Business
+                <input type="checkbox" name="contact-reason" value="Personal">Personal
+                <br /> 
+                Comments<textarea name="comments" placeholder="Enter your comments…."></textarea>
+                </label>
         </section>
-        <section>
-            <h3>Hobbies & Interests</h3>
-            <ul>
-                <li>Rollerskating</li>
-                <li>Running and strength training</li>
-                <li>Reading (mostly non-fiction particularly history)</li>
-            </ul>
-        </section>
-                <footer>2023 Jenny Rafferty</footer>
+        <footer>2023 Jenny Rafferty</footer>
             </main>
         </body>
 </html>
